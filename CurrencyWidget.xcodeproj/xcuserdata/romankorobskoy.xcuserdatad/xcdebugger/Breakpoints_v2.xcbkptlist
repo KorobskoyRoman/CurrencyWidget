@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "64C80D12-FD80-495F-A119-D401CDDD0FA4"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "881225CC-1CC7-4157-ABD8-CEDA14B68DEB"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CurrencyWidget/Core/Data/Services/FetchCurrencyService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "25"
+            endingLineNumber = "25"
+            landmarkName = "fetchCurrency()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "881225CC-1CC7-4157-ABD8-CEDA14B68DEB - 242a32b97567d640"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for CurrencyWidget.FetchCurrencyService.fetchCurrency(from: Swift.String, to: Swift.String, amount: Swift.Int) async throws -&gt; CurrencyWidget.Currency"
+                  moduleName = "CurrencyWidget"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/romankorobskoy/Documents/untitled%20folder/CurrencyWidget/CurrencyWidget/Core/Data/Services/FetchCurrencyService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "25"
+                  endingLineNumber = "25"
+                  offsetFromSymbolStart = "212">
+               </Location>
+               <Location
+                  uuid = "881225CC-1CC7-4157-ABD8-CEDA14B68DEB - da33e756f71bb32e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(2) await resume partial function for CurrencyWidget.FetchCurrencyService.fetchCurrency(from: Swift.String, to: Swift.String, amount: Swift.Int) async throws -&gt; CurrencyWidget.Currency"
+                  moduleName = "CurrencyWidget"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/romankorobskoy/Documents/untitled%20folder/CurrencyWidget/CurrencyWidget/Core/Data/Services/FetchCurrencyService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "25"
+                  endingLineNumber = "25"
+                  offsetFromSymbolStart = "44">
+               </Location>
+               <Location
+                  uuid = "881225CC-1CC7-4157-ABD8-CEDA14B68DEB - ee9899aa135d1242"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for CurrencyWidget.FetchCurrencyService.fetchCurrency(from: Swift.String, to: Swift.String, amount: Swift.Int) async throws -&gt; CurrencyWidget.Currency"
+                  moduleName = "CurrencyWidget"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/romankorobskoy/Documents/untitled%20folder/CurrencyWidget/CurrencyWidget/Core/Data/Services/FetchCurrencyService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "25"
+                  endingLineNumber = "25"
+                  offsetFromSymbolStart = "68">
+               </Location>
+               <Location
+                  uuid = "881225CC-1CC7-4157-ABD8-CEDA14B68DEB - 53a1ac5440a1f04d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(4) suspend resume partial function for CurrencyWidget.FetchCurrencyService.fetchCurrency(from: Swift.String, to: Swift.String, amount: Swift.Int) async throws -&gt; CurrencyWidget.Currency"
+                  moduleName = "CurrencyWidget"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/romankorobskoy/Documents/untitled%20folder/CurrencyWidget/CurrencyWidget/Core/Data/Services/FetchCurrencyService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "25"
+                  endingLineNumber = "25"
+                  offsetFromSymbolStart = "96">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F18A2909-94CD-4AA3-AAB5-5CFB71767484"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CurrencyWidget/Core/Data/API/RequestModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "21"
+            endingLineNumber = "21"
+            landmarkName = "params"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "F18A2909-94CD-4AA3-AAB5-5CFB71767484 - cb105a80237b31ee"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CurrencyWidget.RequestModel.params.getter : Swift.Dictionary&lt;Swift.String, Swift.Optional&lt;Swift.String&gt;&gt;"
+                  moduleName = "CurrencyWidget"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/romankorobskoy/Documents/untitled%20folder/CurrencyWidget/CurrencyWidget/Core/Data/API/RequestModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "21"
+                  endingLineNumber = "21"
+                  offsetFromSymbolStart = "192">
+               </Location>
+               <Location
+                  uuid = "F18A2909-94CD-4AA3-AAB5-5CFB71767484 - cb105a80237b31ee"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CurrencyWidget.RequestModel.params.getter : Swift.Dictionary&lt;Swift.String, Swift.Optional&lt;Swift.String&gt;&gt;"
+                  moduleName = "CurrencyWidget"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/romankorobskoy/Documents/untitled%20folder/CurrencyWidget/CurrencyWidget/Core/Data/API/RequestModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "21"
+                  endingLineNumber = "21"
+                  offsetFromSymbolStart = "56">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4C13FDCF-B3DE-4667-869B-AB43E4030268"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CurrencyWidget/Core/Data/API/APIManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "29"
+            endingLineNumber = "29"
+            landmarkName = "perform(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "7828A28E-9958-4047-80E4-29B96A58E9A2"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CurrencyWidget/Core/Data/API/APIManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
+            landmarkName = "perform(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "7828A28E-9958-4047-80E4-29B96A58E9A2 - 362bf89315f0cefa"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for CurrencyWidget.APIManager.perform(CurrencyWidget.RequestProtocol) async throws -&gt; Foundation.Data"
+                  moduleName = "CurrencyWidget"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/romankorobskoy/Documents/untitled%20folder/CurrencyWidget/CurrencyWidget/Core/Data/API/APIManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "26"
+                  endingLineNumber = "26"
+                  offsetFromSymbolStart = "156">
+               </Location>
+               <Location
+                  uuid = "7828A28E-9958-4047-80E4-29B96A58E9A2 - 362bf89315f0cefa"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for CurrencyWidget.APIManager.perform(CurrencyWidget.RequestProtocol) async throws -&gt; Foundation.Data"
+                  moduleName = "CurrencyWidget"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/romankorobskoy/Documents/untitled%20folder/CurrencyWidget/CurrencyWidget/Core/Data/API/APIManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "26"
+                  endingLineNumber = "26"
+                  offsetFromSymbolStart = "424">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "050245CA-F16B-424C-A0C7-3A8992830E90"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CurrencyWidget/Core/Data/API/RequestProtocol.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "40"
+            endingLineNumber = "40"
+            landmarkName = "createURLRequest()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
