@@ -26,7 +26,6 @@
 		9CF363672A686538004FC2D5 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CF363212A6862FC004FC2D5 /* SwiftUI.framework */; };
 		9CF3636A2A686538004FC2D5 /* WidgetsBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF363692A686538004FC2D5 /* WidgetsBundle.swift */; };
 		9CF3636C2A686538004FC2D5 /* Widgets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF3636B2A686538004FC2D5 /* Widgets.swift */; };
-		9CF3636E2A68653A004FC2D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CF3636D2A68653A004FC2D5 /* Assets.xcassets */; };
 		9CF363722A68653A004FC2D5 /* WidgetsExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 9CF363652A686538004FC2D5 /* WidgetsExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		9CF363772A6869FA004FC2D5 /* Shimmer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF363762A6869FA004FC2D5 /* Shimmer.swift */; };
 		9CF3637D2A689163004FC2D5 /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF363102A68490D004FC2D5 /* Currency.swift */; };
@@ -44,6 +43,10 @@
 		9CF3638A2A689171004FC2D5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF362EE2A68397E004FC2D5 /* ContentView.swift */; };
 		9CF363922A69B981004FC2D5 /* WidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF363912A69B94E004FC2D5 /* WidgetView.swift */; };
 		9CF363942A69BDF6004FC2D5 /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF363932A69BDA4004FC2D5 /* ErrorView.swift */; };
+		9CF363AC2A69C9DF004FC2D5 /* Provider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF363AB2A69C9DF004FC2D5 /* Provider.swift */; };
+		9CF363AF2A69CA40004FC2D5 /* SimpleEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF363AE2A69CA40004FC2D5 /* SimpleEntry.swift */; };
+		9CF363B02A69CA68004FC2D5 /* StrictlyWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF363562A6863E1004FC2D5 /* StrictlyWidget.swift */; };
+		9CF363B22A69CDEB004FC2D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CF3636D2A68653A004FC2D5 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -91,7 +94,7 @@
 		9CF3631F2A6862FB004FC2D5 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		9CF363212A6862FC004FC2D5 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
 		9CF363542A6863E1004FC2D5 /* WidgetsBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetsBundle.swift; sourceTree = "<group>"; };
-		9CF363562A6863E1004FC2D5 /* Widgets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Widgets.swift; sourceTree = "<group>"; };
+		9CF363562A6863E1004FC2D5 /* StrictlyWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrictlyWidget.swift; sourceTree = "<group>"; };
 		9CF363582A6863E2004FC2D5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9CF3635A2A6863E2004FC2D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9CF363652A686538004FC2D5 /* WidgetsExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = WidgetsExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -102,6 +105,8 @@
 		9CF363762A6869FA004FC2D5 /* Shimmer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shimmer.swift; sourceTree = "<group>"; };
 		9CF363912A69B94E004FC2D5 /* WidgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetView.swift; sourceTree = "<group>"; };
 		9CF363932A69BDA4004FC2D5 /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
+		9CF363AB2A69C9DF004FC2D5 /* Provider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Provider.swift; sourceTree = "<group>"; };
+		9CF363AE2A69CA40004FC2D5 /* SimpleEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleEntry.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -237,9 +242,7 @@
 			isa = PBXGroup;
 			children = (
 				9CF363542A6863E1004FC2D5 /* WidgetsBundle.swift */,
-				9CF363562A6863E1004FC2D5 /* Widgets.swift */,
-				9CF363912A69B94E004FC2D5 /* WidgetView.swift */,
-				9CF363932A69BDA4004FC2D5 /* ErrorView.swift */,
+				9CF363AD2A69CA1A004FC2D5 /* WidgetStructure */,
 				9CF363582A6863E2004FC2D5 /* Assets.xcassets */,
 				9CF3635A2A6863E2004FC2D5 /* Info.plist */,
 			);
@@ -255,6 +258,26 @@
 				9CF3636F2A68653A004FC2D5 /* Info.plist */,
 			);
 			path = Widgets;
+			sourceTree = "<group>";
+		};
+		9CF363AD2A69CA1A004FC2D5 /* WidgetStructure */ = {
+			isa = PBXGroup;
+			children = (
+				9CF363562A6863E1004FC2D5 /* StrictlyWidget.swift */,
+				9CF363AE2A69CA40004FC2D5 /* SimpleEntry.swift */,
+				9CF363AB2A69C9DF004FC2D5 /* Provider.swift */,
+				9CF363B12A69CAEB004FC2D5 /* Views */,
+			);
+			path = WidgetStructure;
+			sourceTree = "<group>";
+		};
+		9CF363B12A69CAEB004FC2D5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9CF363912A69B94E004FC2D5 /* WidgetView.swift */,
+				9CF363932A69BDA4004FC2D5 /* ErrorView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -347,7 +370,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9CF3636E2A68653A004FC2D5 /* Assets.xcassets in Resources */,
+				9CF363B22A69CDEB004FC2D5 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -387,8 +410,10 @@
 				9CF363882A689171004FC2D5 /* Shimmer.swift in Sources */,
 				9CF363862A68916E004FC2D5 /* RequestManager.swift in Sources */,
 				9CF363812A68916A004FC2D5 /* RequestType.swift in Sources */,
+				9CF363AF2A69CA40004FC2D5 /* SimpleEntry.swift in Sources */,
 				9CF3636A2A686538004FC2D5 /* WidgetsBundle.swift in Sources */,
 				9CF363842A68916E004FC2D5 /* RequestModel.swift in Sources */,
+				9CF363AC2A69C9DF004FC2D5 /* Provider.swift in Sources */,
 				9CF363852A68916E004FC2D5 /* RequestProtocol.swift in Sources */,
 				9CF363922A69B981004FC2D5 /* WidgetView.swift in Sources */,
 				9CF363802A68916A004FC2D5 /* NetworkError.swift in Sources */,
@@ -396,6 +421,7 @@
 				9CF363872A68916E004FC2D5 /* APIManager.swift in Sources */,
 				9CF3637E2A689165004FC2D5 /* FetchCurrencyService.swift in Sources */,
 				9CF363832A68916E004FC2D5 /* DataParser.swift in Sources */,
+				9CF363B02A69CA68004FC2D5 /* StrictlyWidget.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -626,7 +652,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -654,7 +680,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
