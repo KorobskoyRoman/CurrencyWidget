@@ -6,10 +6,9 @@
 //
 
 import SwiftUI
+import WidgetKit
 
 struct ContentView: View {
-
-    let service: FetchCurrencyService
 
     var body: some View {
         VStack {
@@ -19,23 +18,11 @@ struct ContentView: View {
             Text("Hello, world!")
         }
         .padding()
-        .task {
-            await fetch()
-        }
-    }
-
-    private func fetch() async {
-        do {
-            let currency = try await service.fetchCurrency()
-            print(currency)
-        } catch {
-            print(error.localizedDescription)
-        }
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView(service: FetchCurrencyService(requestManager: RequestManager()))
+        ContentView()
     }
 }

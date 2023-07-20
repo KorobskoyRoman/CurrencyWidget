@@ -11,7 +11,7 @@ struct FetchCurrencyService {
 
     private let requestManager: RequestManagerType
 
-    init(requestManager: RequestManagerType) {
+    init(requestManager: RequestManagerType = RequestManager()) {
         self.requestManager = requestManager
     }
 }

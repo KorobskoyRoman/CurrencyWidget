@@ -11,7 +11,7 @@ import SwiftUI
 struct CurrencyWidgetApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView(service: FetchCurrencyService(requestManager: RequestManager()))
+            ContentView()
         }
     }
 }
