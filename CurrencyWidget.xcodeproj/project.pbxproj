@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9CE215082A69D2DA007B321C /* WidgetsBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF363542A6863E1004FC2D5 /* WidgetsBundle.swift */; };
+		9CE2150A2A69D43C007B321C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CF363582A6863E2004FC2D5 /* Assets.xcassets */; };
+		9CE2155D2A6AE1C5007B321C /* CurrencySelection.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 9CE2155C2A6AE1C5007B321C /* CurrencySelection.intentdefinition */; };
+		9CE2155E2A6AE1C5007B321C /* CurrencySelection.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 9CE2155C2A6AE1C5007B321C /* CurrencySelection.intentdefinition */; };
 		9CF362ED2A68397E004FC2D5 /* CurrencyWidgetApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF362EC2A68397E004FC2D5 /* CurrencyWidgetApp.swift */; };
 		9CF362EF2A68397E004FC2D5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF362EE2A68397E004FC2D5 /* ContentView.swift */; };
 		9CF362F12A68397F004FC2D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CF362F02A68397F004FC2D5 /* Assets.xcassets */; };
@@ -24,8 +28,6 @@
 		9CF363152A684D35004FC2D5 /* FetchCurrencyService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF363142A684D35004FC2D5 /* FetchCurrencyService.swift */; };
 		9CF363662A686538004FC2D5 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CF3631F2A6862FB004FC2D5 /* WidgetKit.framework */; };
 		9CF363672A686538004FC2D5 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CF363212A6862FC004FC2D5 /* SwiftUI.framework */; };
-		9CF3636A2A686538004FC2D5 /* WidgetsBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF363692A686538004FC2D5 /* WidgetsBundle.swift */; };
-		9CF3636C2A686538004FC2D5 /* Widgets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF3636B2A686538004FC2D5 /* Widgets.swift */; };
 		9CF363722A68653A004FC2D5 /* WidgetsExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 9CF363652A686538004FC2D5 /* WidgetsExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		9CF363772A6869FA004FC2D5 /* Shimmer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF363762A6869FA004FC2D5 /* Shimmer.swift */; };
 		9CF3637D2A689163004FC2D5 /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF363102A68490D004FC2D5 /* Currency.swift */; };
@@ -46,7 +48,6 @@
 		9CF363AC2A69C9DF004FC2D5 /* Provider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF363AB2A69C9DF004FC2D5 /* Provider.swift */; };
 		9CF363AF2A69CA40004FC2D5 /* SimpleEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF363AE2A69CA40004FC2D5 /* SimpleEntry.swift */; };
 		9CF363B02A69CA68004FC2D5 /* StrictlyWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF363562A6863E1004FC2D5 /* StrictlyWidget.swift */; };
-		9CF363B22A69CDEB004FC2D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CF3636D2A68653A004FC2D5 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +75,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		9CE215122A69DBEB007B321C /* Intents.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Intents.framework; path = System/Library/Frameworks/Intents.framework; sourceTree = SDKROOT; };
+		9CE2151D2A69DBEB007B321C /* IntentsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IntentsUI.framework; path = System/Library/Frameworks/IntentsUI.framework; sourceTree = SDKROOT; };
+		9CE2155C2A6AE1C5007B321C /* CurrencySelection.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = CurrencySelection.intentdefinition; sourceTree = "<group>"; };
 		9CF362E92A68397D004FC2D5 /* CurrencyWidget.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CurrencyWidget.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CF362EC2A68397E004FC2D5 /* CurrencyWidgetApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyWidgetApp.swift; sourceTree = "<group>"; };
 		9CF362EE2A68397E004FC2D5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -98,10 +102,6 @@
 		9CF363582A6863E2004FC2D5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9CF3635A2A6863E2004FC2D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9CF363652A686538004FC2D5 /* WidgetsExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = WidgetsExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
-		9CF363692A686538004FC2D5 /* WidgetsBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetsBundle.swift; sourceTree = "<group>"; };
-		9CF3636B2A686538004FC2D5 /* Widgets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Widgets.swift; sourceTree = "<group>"; };
-		9CF3636D2A68653A004FC2D5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		9CF3636F2A68653A004FC2D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9CF363762A6869FA004FC2D5 /* Shimmer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shimmer.swift; sourceTree = "<group>"; };
 		9CF363912A69B94E004FC2D5 /* WidgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetView.swift; sourceTree = "<group>"; };
 		9CF363932A69BDA4004FC2D5 /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
@@ -134,7 +134,6 @@
 			children = (
 				9CF362EB2A68397E004FC2D5 /* CurrencyWidget */,
 				9CF363532A6863E1004FC2D5 /* Widgets */,
-				9CF363682A686538004FC2D5 /* Widgets */,
 				9CF3631E2A6862FB004FC2D5 /* Frameworks */,
 				9CF362EA2A68397D004FC2D5 /* Products */,
 			);
@@ -234,6 +233,8 @@
 			children = (
 				9CF3631F2A6862FB004FC2D5 /* WidgetKit.framework */,
 				9CF363212A6862FC004FC2D5 /* SwiftUI.framework */,
+				9CE215122A69DBEB007B321C /* Intents.framework */,
+				9CE2151D2A69DBEB007B321C /* IntentsUI.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -241,21 +242,11 @@
 		9CF363532A6863E1004FC2D5 /* Widgets */ = {
 			isa = PBXGroup;
 			children = (
+				9CE2155C2A6AE1C5007B321C /* CurrencySelection.intentdefinition */,
 				9CF363542A6863E1004FC2D5 /* WidgetsBundle.swift */,
 				9CF363AD2A69CA1A004FC2D5 /* WidgetStructure */,
 				9CF363582A6863E2004FC2D5 /* Assets.xcassets */,
 				9CF3635A2A6863E2004FC2D5 /* Info.plist */,
-			);
-			path = Widgets;
-			sourceTree = "<group>";
-		};
-		9CF363682A686538004FC2D5 /* Widgets */ = {
-			isa = PBXGroup;
-			children = (
-				9CF363692A686538004FC2D5 /* WidgetsBundle.swift */,
-				9CF3636B2A686538004FC2D5 /* Widgets.swift */,
-				9CF3636D2A68653A004FC2D5 /* Assets.xcassets */,
-				9CF3636F2A68653A004FC2D5 /* Info.plist */,
 			);
 			path = Widgets;
 			sourceTree = "<group>";
@@ -370,7 +361,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9CF363B22A69CDEB004FC2D5 /* Assets.xcassets in Resources */,
+				9CE2150A2A69D43C007B321C /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -381,6 +372,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9CE2155D2A6AE1C5007B321C /* CurrencySelection.intentdefinition in Sources */,
 				9CF363772A6869FA004FC2D5 /* Shimmer.swift in Sources */,
 				9CF363112A68490D004FC2D5 /* Currency.swift in Sources */,
 				9CF362EF2A68397E004FC2D5 /* ContentView.swift in Sources */,
@@ -402,6 +394,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9CE2155E2A6AE1C5007B321C /* CurrencySelection.intentdefinition in Sources */,
+				9CE215082A69D2DA007B321C /* WidgetsBundle.swift in Sources */,
 				9CF3637D2A689163004FC2D5 /* Currency.swift in Sources */,
 				9CF363822A68916A004FC2D5 /* URLTypes.swift in Sources */,
 				9CF3638A2A689171004FC2D5 /* ContentView.swift in Sources */,
@@ -411,13 +405,11 @@
 				9CF363862A68916E004FC2D5 /* RequestManager.swift in Sources */,
 				9CF363812A68916A004FC2D5 /* RequestType.swift in Sources */,
 				9CF363AF2A69CA40004FC2D5 /* SimpleEntry.swift in Sources */,
-				9CF3636A2A686538004FC2D5 /* WidgetsBundle.swift in Sources */,
 				9CF363842A68916E004FC2D5 /* RequestModel.swift in Sources */,
 				9CF363AC2A69C9DF004FC2D5 /* Provider.swift in Sources */,
 				9CF363852A68916E004FC2D5 /* RequestProtocol.swift in Sources */,
 				9CF363922A69B981004FC2D5 /* WidgetView.swift in Sources */,
 				9CF363802A68916A004FC2D5 /* NetworkError.swift in Sources */,
-				9CF3636C2A686538004FC2D5 /* Widgets.swift in Sources */,
 				9CF363872A68916E004FC2D5 /* APIManager.swift in Sources */,
 				9CF3637E2A689165004FC2D5 /* FetchCurrencyService.swift in Sources */,
 				9CF363832A68916E004FC2D5 /* DataParser.swift in Sources */,
@@ -635,17 +627,13 @@
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = 7XP9H5G8CF;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Widgets/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Widgets;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@executable_path/../../Frameworks",
-				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.underscoreow.CurrencyWidget.Widgets;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -663,17 +651,13 @@
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = 7XP9H5G8CF;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Widgets/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Widgets;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@executable_path/../../Frameworks",
-				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.underscoreow.CurrencyWidget.Widgets;
 				PRODUCT_NAME = "$(TARGET_NAME)";

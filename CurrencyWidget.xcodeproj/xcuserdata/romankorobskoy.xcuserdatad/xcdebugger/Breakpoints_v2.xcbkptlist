@@ -270,5 +270,99 @@
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "BFEF2AF1-457E-45B2-B4B3-0096DE80E4EF"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Widgets/WidgetStructure/Provider.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "75"
+            endingLineNumber = "75"
+            landmarkName = "scheduleRefresh()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D49BC6E1-60BB-49F9-8AEF-8345B47EDED1"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Widgets/WidgetStructure/Provider.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "46"
+            endingLineNumber = "46"
+            landmarkName = "getTimeline(for:in:completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "D49BC6E1-60BB-49F9-8AEF-8345B47EDED1 - 35c4de4c81b0e705"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for closure #1 @Sendable () async -&gt; () in WidgetsExtension.Provider.getTimeline(for: WidgetsExtension.CurrencySelectionIntent, in: WidgetKit.TimelineProviderContext, completion: (WidgetKit.Timeline&lt;WidgetsExtension.SimpleEntry&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "WidgetsExtension"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/romankorobskoy/Documents/untitled%20folder/CurrencyWidget/Widgets/WidgetStructure/Provider.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "47"
+                  endingLineNumber = "47"
+                  offsetFromSymbolStart = "404">
+               </Location>
+               <Location
+                  uuid = "D49BC6E1-60BB-49F9-8AEF-8345B47EDED1 - 35c4de4c81b0e705"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for closure #1 @Sendable () async -&gt; () in WidgetsExtension.Provider.getTimeline(for: WidgetsExtension.CurrencySelectionIntent, in: WidgetKit.TimelineProviderContext, completion: (WidgetKit.Timeline&lt;WidgetsExtension.SimpleEntry&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "WidgetsExtension"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/romankorobskoy/Documents/untitled%20folder/CurrencyWidget/Widgets/WidgetStructure/Provider.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "47"
+                  endingLineNumber = "47"
+                  offsetFromSymbolStart = "604">
+               </Location>
+               <Location
+                  uuid = "D49BC6E1-60BB-49F9-8AEF-8345B47EDED1 - 35c4de4c81b0e705"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for closure #1 @Sendable () async -&gt; () in WidgetsExtension.Provider.getTimeline(for: WidgetsExtension.CurrencySelectionIntent, in: WidgetKit.TimelineProviderContext, completion: (WidgetKit.Timeline&lt;WidgetsExtension.SimpleEntry&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "WidgetsExtension"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/romankorobskoy/Documents/untitled%20folder/CurrencyWidget/Widgets/WidgetStructure/Provider.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "47"
+                  endingLineNumber = "47"
+                  offsetFromSymbolStart = "556">
+               </Location>
+               <Location
+                  uuid = "D49BC6E1-60BB-49F9-8AEF-8345B47EDED1 - 35c4de4c81b0e705"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for closure #1 @Sendable () async -&gt; () in WidgetsExtension.Provider.getTimeline(for: WidgetsExtension.CurrencySelectionIntent, in: WidgetKit.TimelineProviderContext, completion: (WidgetKit.Timeline&lt;WidgetsExtension.SimpleEntry&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "WidgetsExtension"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/romankorobskoy/Documents/untitled%20folder/CurrencyWidget/Widgets/WidgetStructure/Provider.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "47"
+                  endingLineNumber = "47"
+                  offsetFromSymbolStart = "564">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>

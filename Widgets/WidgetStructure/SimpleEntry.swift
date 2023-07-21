@@ -11,4 +11,5 @@ struct SimpleEntry: TimelineEntry {
     let date: Date
     let currency: Currency?
     let error: String?
+    let selectedCurrency: String?
 }

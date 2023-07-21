@@ -14,9 +14,29 @@
 			<key>orderHint</key>
 			<integer>1</integer>
 		</dict>
+		<key>WidgetsIntent.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>3</integer>
+		</dict>
+		<key>WidgetsIntentUI.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>9CE215102A69DBEB007B321C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>9CE2151B2A69DBEB007B321C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>9CF362E82A68397D004FC2D5</key>
 		<dict>
 			<key>primary</key>

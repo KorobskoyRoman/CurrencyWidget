@@ -15,9 +15,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "9CF363642A686538004FC2D5"
-               BuildableName = "WidgetsExtension.appex"
-               BlueprintName = "WidgetsExtension"
+               BlueprintIdentifier = "9CE2151B2A69DBEB007B321C"
+               BuildableName = "WidgetsIntentUI.appex"
+               BlueprintName = "WidgetsIntentUI"
                ReferencedContainer = "container:CurrencyWidget.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -56,18 +56,8 @@
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES"
       launchAutomaticallySubstyle = "2">
-      <RemoteRunnable
-         runnableDebuggingMode = "2"
-         BundleIdentifier = "com.apple.springboard">
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "9CF363642A686538004FC2D5"
-            BuildableName = "WidgetsExtension.appex"
-            BlueprintName = "WidgetsExtension"
-            ReferencedContainer = "container:CurrencyWidget.xcodeproj">
-         </BuildableReference>
-      </RemoteRunnable>
-      <MacroExpansion>
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "9CF362E82A68397D004FC2D5"
@@ -75,24 +65,7 @@
             BlueprintName = "CurrencyWidget"
             ReferencedContainer = "container:CurrencyWidget.xcodeproj">
          </BuildableReference>
-      </MacroExpansion>
-      <EnvironmentVariables>
-         <EnvironmentVariable
-            key = "_XCWidgetKind"
-            value = "StrictlyWidget"
-            isEnabled = "YES">
-         </EnvironmentVariable>
-         <EnvironmentVariable
-            key = "_XCWidgetDefaultView"
-            value = "timeline"
-            isEnabled = "NO">
-         </EnvironmentVariable>
-         <EnvironmentVariable
-            key = "_XCWidgetFamily"
-            value = "medium"
-            isEnabled = "NO">
-         </EnvironmentVariable>
-      </EnvironmentVariables>
+      </BuildableProductRunnable>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Release"

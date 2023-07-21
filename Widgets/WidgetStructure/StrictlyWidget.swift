@@ -18,10 +18,11 @@ struct WidgetsEntryView: View {
             if let error = entry.error {
                 ErrorView(error: error)
             } else {
-                if let currency = entry.currency {
-                    WidgetView(currency: currency)
+                if let currency = entry.currency,
+                   let currencyName = entry.selectedCurrency {
+                    WidgetView(currency: currency, currencyName: currencyName)
                 } else {
-                    WidgetView(currency: .mockCurrency)
+                    WidgetView(currency: .mockCurrency, currencyName: "Zero")
                         .redacted(reason: .placeholder)
                         .shimmering()
                 }
@@ -34,7 +35,8 @@ struct StrictlyWidget: Widget {
     let kind: String = "StrictlyWidget"
 
     var body: some WidgetConfiguration {
-        StaticConfiguration(kind: kind, provider: Provider()) { entry in
+//        StaticConfiguration(kind: kind, provider: Provider()) { entry in
+        IntentConfiguration(kind: kind, intent: CurrencySelectionIntent.self, provider: Provider()) { entry in
             WidgetsEntryView(entry: entry).onAppear { Provider.scheduleRefresh() }
         }
         .configurationDisplayName("Strictly widget")
