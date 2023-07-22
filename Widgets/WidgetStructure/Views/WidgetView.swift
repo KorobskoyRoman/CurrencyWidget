@@ -11,6 +11,7 @@ import WidgetKit
 struct WidgetView: View {
     var currency: Currency
     var currencyName: String
+    var volatility: Double?
 
     var body: some View {
         VStack(alignment: .leading) {
@@ -21,15 +22,17 @@ struct WidgetView: View {
                 VStack(alignment: .leading, spacing: 2) {
                     Text(currencyName)
                         .font(.system(size: 12))
-                        .foregroundColor(.gray)
+                        .foregroundColor(.currencyName)
                     Text("24 hours")
                         .font(.system(size: 10))
+                        .foregroundColor(.data)
                 }
             }
 
             makeSplitLabel(count: currency.rates[currencyName] ?? 1)
-            Text("—")
-        }
+                .foregroundColor(.currencyValue)
+            makeVolatility()
+        }.padding(.trailing)
     }
 
     private func makeSplitLabel(count: Double) -> some View {
@@ -50,11 +53,25 @@ struct WidgetView: View {
             }
         }
     }
+
+    private func makeVolatility() -> some View {
+        guard let volatility else { return Text("—") }
+
+        let color: Color = volatility > 0 ? .volatilityNegative : .volatilityPositive
+        let symbol = volatility > 0 ? "+" : ""
+        let formatted = volatility == 0 ?
+        String(format: "%.0f", volatility) :
+        String(format: "%.2f", volatility)
+
+        return Text(symbol + formatted + "%")
+            .foregroundColor(volatility == 0 ? .volatilityZero : color)
+            .font(.system(size: 12))
+    }
 }
 
 struct WidgetView_Previews: PreviewProvider {
     static var previews: some View {
-        WidgetView(currency: .mockCurrency, currencyName: "USD")
+        WidgetView(currency: .mockCurrency, currencyName: "USD", volatility: 2.34)
             .previewContext(WidgetPreviewContext(family: .systemSmall))
     }
 }

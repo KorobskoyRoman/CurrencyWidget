@@ -11,6 +11,12 @@
 		9CE2150A2A69D43C007B321C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CF363582A6863E2004FC2D5 /* Assets.xcassets */; };
 		9CE2155D2A6AE1C5007B321C /* CurrencySelection.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 9CE2155C2A6AE1C5007B321C /* CurrencySelection.intentdefinition */; };
 		9CE2155E2A6AE1C5007B321C /* CurrencySelection.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 9CE2155C2A6AE1C5007B321C /* CurrencySelection.intentdefinition */; };
+		9CE215602A6C0F90007B321C /* UserDefaultsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CE2155F2A6C0F90007B321C /* UserDefaultsService.swift */; };
+		9CE215612A6C0F90007B321C /* UserDefaultsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CE2155F2A6C0F90007B321C /* UserDefaultsService.swift */; };
+		9CE2156B2A6C281C007B321C /* Color+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CE2156A2A6C281C007B321C /* Color+Ext.swift */; };
+		9CE2156C2A6C281C007B321C /* Color+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CE2156A2A6C281C007B321C /* Color+Ext.swift */; };
+		9CE2156E2A6C2B7D007B321C /* PlaceholderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CE2156D2A6C2B7D007B321C /* PlaceholderView.swift */; };
+		9CE2156F2A6C2B7D007B321C /* PlaceholderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CE2156D2A6C2B7D007B321C /* PlaceholderView.swift */; };
 		9CF362ED2A68397E004FC2D5 /* CurrencyWidgetApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF362EC2A68397E004FC2D5 /* CurrencyWidgetApp.swift */; };
 		9CF362EF2A68397E004FC2D5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF362EE2A68397E004FC2D5 /* ContentView.swift */; };
 		9CF362F12A68397F004FC2D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CF362F02A68397F004FC2D5 /* Assets.xcassets */; };
@@ -78,6 +84,9 @@
 		9CE215122A69DBEB007B321C /* Intents.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Intents.framework; path = System/Library/Frameworks/Intents.framework; sourceTree = SDKROOT; };
 		9CE2151D2A69DBEB007B321C /* IntentsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IntentsUI.framework; path = System/Library/Frameworks/IntentsUI.framework; sourceTree = SDKROOT; };
 		9CE2155C2A6AE1C5007B321C /* CurrencySelection.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = CurrencySelection.intentdefinition; sourceTree = "<group>"; };
+		9CE2155F2A6C0F90007B321C /* UserDefaultsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsService.swift; sourceTree = "<group>"; };
+		9CE2156A2A6C281C007B321C /* Color+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Ext.swift"; sourceTree = "<group>"; };
+		9CE2156D2A6C2B7D007B321C /* PlaceholderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceholderView.swift; sourceTree = "<group>"; };
 		9CF362E92A68397D004FC2D5 /* CurrencyWidget.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CurrencyWidget.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CF362EC2A68397E004FC2D5 /* CurrencyWidgetApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyWidgetApp.swift; sourceTree = "<group>"; };
 		9CF362EE2A68397E004FC2D5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -129,6 +138,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9CE215682A6C280C007B321C /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				9CE215692A6C2812007B321C /* Extensions */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		9CE215692A6C2812007B321C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				9CE2156A2A6C281C007B321C /* Color+Ext.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		9CF362E02A68397D004FC2D5 = {
 			isa = PBXGroup;
 			children = (
@@ -157,6 +182,7 @@
 				9CF362EE2A68397E004FC2D5 /* ContentView.swift */,
 				9CF363762A6869FA004FC2D5 /* Shimmer.swift */,
 				9CF362F02A68397F004FC2D5 /* Assets.xcassets */,
+				9CE215682A6C280C007B321C /* Common */,
 				9CF362F22A68397F004FC2D5 /* Preview Content */,
 			);
 			path = CurrencyWidget;
@@ -224,6 +250,7 @@
 			isa = PBXGroup;
 			children = (
 				9CF363142A684D35004FC2D5 /* FetchCurrencyService.swift */,
+				9CE2155F2A6C0F90007B321C /* UserDefaultsService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -266,6 +293,7 @@
 			isa = PBXGroup;
 			children = (
 				9CF363912A69B94E004FC2D5 /* WidgetView.swift */,
+				9CE2156D2A6C2B7D007B321C /* PlaceholderView.swift */,
 				9CF363932A69BDA4004FC2D5 /* ErrorView.swift */,
 			);
 			path = Views;
@@ -376,14 +404,17 @@
 				9CF363772A6869FA004FC2D5 /* Shimmer.swift in Sources */,
 				9CF363112A68490D004FC2D5 /* Currency.swift in Sources */,
 				9CF362EF2A68397E004FC2D5 /* ContentView.swift in Sources */,
+				9CE2156B2A6C281C007B321C /* Color+Ext.swift in Sources */,
 				9CF363072A684436004FC2D5 /* NetworkError.swift in Sources */,
 				9CF3630D2A68482D004FC2D5 /* DataParser.swift in Sources */,
 				9CF362ED2A68397E004FC2D5 /* CurrencyWidgetApp.swift in Sources */,
+				9CE2156E2A6C2B7D007B321C /* PlaceholderView.swift in Sources */,
 				9CF363092A684616004FC2D5 /* APIManager.swift in Sources */,
 				9CF363052A6843D0004FC2D5 /* URLTypes.swift in Sources */,
 				9CF3630B2A684787004FC2D5 /* RequestManager.swift in Sources */,
 				9CF362FC2A683E9C004FC2D5 /* APIConstants.swift in Sources */,
 				9CF363152A684D35004FC2D5 /* FetchCurrencyService.swift in Sources */,
+				9CE215602A6C0F90007B321C /* UserDefaultsService.swift in Sources */,
 				9CF363022A6842D2004FC2D5 /* RequestProtocol.swift in Sources */,
 				9CF362FE2A683F68004FC2D5 /* RequestModel.swift in Sources */,
 				9CF363002A6842AC004FC2D5 /* RequestType.swift in Sources */,
@@ -401,6 +432,7 @@
 				9CF3638A2A689171004FC2D5 /* ContentView.swift in Sources */,
 				9CF3637F2A68916A004FC2D5 /* APIConstants.swift in Sources */,
 				9CF363942A69BDF6004FC2D5 /* ErrorView.swift in Sources */,
+				9CE2156C2A6C281C007B321C /* Color+Ext.swift in Sources */,
 				9CF363882A689171004FC2D5 /* Shimmer.swift in Sources */,
 				9CF363862A68916E004FC2D5 /* RequestManager.swift in Sources */,
 				9CF363812A68916A004FC2D5 /* RequestType.swift in Sources */,
@@ -409,7 +441,9 @@
 				9CF363AC2A69C9DF004FC2D5 /* Provider.swift in Sources */,
 				9CF363852A68916E004FC2D5 /* RequestProtocol.swift in Sources */,
 				9CF363922A69B981004FC2D5 /* WidgetView.swift in Sources */,
+				9CE215612A6C0F90007B321C /* UserDefaultsService.swift in Sources */,
 				9CF363802A68916A004FC2D5 /* NetworkError.swift in Sources */,
+				9CE2156F2A6C2B7D007B321C /* PlaceholderView.swift in Sources */,
 				9CF363872A68916E004FC2D5 /* APIManager.swift in Sources */,
 				9CF3637E2A689165004FC2D5 /* FetchCurrencyService.swift in Sources */,
 				9CF363832A68916E004FC2D5 /* DataParser.swift in Sources */,

@@ -12,4 +12,5 @@ struct SimpleEntry: TimelineEntry {
     let currency: Currency?
     let error: String?
     let selectedCurrency: String?
+    let volatility: Double?
 }

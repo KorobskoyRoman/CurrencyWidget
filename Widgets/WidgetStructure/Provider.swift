@@ -12,9 +12,10 @@ struct Provider: IntentTimelineProvider {
     typealias Intent = CurrencySelectionIntent
 
     private let service = FetchCurrencyService()
+    private let udService = UserDefaultsService()
 
     func placeholder(in context: Context) -> SimpleEntry {
-        SimpleEntry(date: Date(), currency: nil, error: nil, selectedCurrency: nil)
+        SimpleEntry(date: Date(), currency: nil, error: nil, selectedCurrency: nil, volatility: nil)
     }
 
     func getSnapshot(for configuration: Intent, in context: Context, completion: @escaping (SimpleEntry) -> Void) {
@@ -25,9 +26,14 @@ struct Provider: IntentTimelineProvider {
 
             do {
                 let currency = try await service.fetchCurrency()
-                entry = SimpleEntry(date: currentDate, currency: currency, error: nil, selectedCurrency: currencyName)
+                let udKey = currency.date + currencyName
+                let currentRate = currency.rates[currencyName] ?? 1
+                print(currency)
+                udService.saveVolatilityData(date: udKey, value: currentRate)
+                let volatility = udService.getViolityData(date: udKey, currentValue: currentRate)
+                entry = SimpleEntry(date: currentDate, currency: currency, error: nil, selectedCurrency: currencyName, volatility: volatility)
             } catch {
-                entry = SimpleEntry(date: currentDate, currency: nil, error: error.localizedDescription, selectedCurrency: nil)
+                entry = SimpleEntry(date: currentDate, currency: nil, error: error.localizedDescription, selectedCurrency: nil, volatility: nil)
             }
 
             completion(entry)
@@ -42,14 +48,17 @@ struct Provider: IntentTimelineProvider {
 
             do {
                 let currency = try await service.fetchCurrency()
+                let udKey = currency.date + currencyName
+                let currentRate = currency.rates[currencyName] ?? 1
                 print(currency)
-                entry = SimpleEntry(date: currentDate, currency: currency, error: nil, selectedCurrency: currencyName)
+                udService.saveVolatilityData(date: udKey, value: currentRate)
+                let volatility = udService.getViolityData(date: udKey, currentValue: currentRate)
+                entry = SimpleEntry(date: currentDate, currency: currency, error: nil, selectedCurrency: currencyName, volatility: volatility)
             } catch {
-                entry = SimpleEntry(date: currentDate, currency: nil, error: error.localizedDescription, selectedCurrency: nil)
+                entry = SimpleEntry(date: currentDate, currency: nil, error: error.localizedDescription, selectedCurrency: nil, volatility: nil)
             }
 
-//            let nextUpdate = Calendar.current.date(byAdding: .minute, value: 1, to: currentDate)!
-            let nextUpdate = Calendar.current.date(byAdding: .second, value: 5, to: currentDate)!
+            let nextUpdate = Calendar.current.date(byAdding: .minute, value: 1, to: currentDate)!
             let timeline = Timeline(entries: [entry], policy: .after(nextUpdate))
             completion(timeline)
         }
@@ -69,6 +78,8 @@ struct Provider: IntentTimelineProvider {
         }
     }
 
+    /// API позволяет только обновление раз в час.
+    /// Сейчас обновление работает и без планировщика.
     static func scheduleRefresh() {
 //        WidgetCenter.shared.reloadTimelines(ofKind: "StrictlyWidget") // 1 раз в сек
 
