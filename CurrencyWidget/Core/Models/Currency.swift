@@ -17,13 +17,13 @@ struct Currency: Codable {
     func currencySymbol(for code: String) -> String {
         switch code {
         case "USD":
-            return " $"
+            return "$"
         case "EUR":
-            return " €"
+            return "€"
         case "AED":
-            return " د.إ"
+            return "د.إ"
         case "RUB":
-            return " ₽"
+            return "₽"
         default:
             return code
         }
