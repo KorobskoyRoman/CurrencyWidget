@@ -39,15 +39,18 @@ struct WidgetView: View {
         let count = String(format: "%.2f", count)
         let splitedValue = count.split(separator: ".")
 
-        return HStack(alignment: .bottom, spacing: .zero) {
+        return HStack(alignment: .firstTextBaseline, spacing: .zero) {
             ForEach(0..<splitedValue.count, id: \.self) { index in
                 switch index {
                 case 0:
                     Text(splitedValue[index])
                         .font(.system(size: 36))
                 case 1:
-                    Text("." + splitedValue[index] + currency.currencySymbol(for: currencyName))
-                        .font(.system(size: 26))
+                    HStack(spacing: 3) {
+                        Text("." + splitedValue[index])
+                            .font(.system(size: 26))
+                        Text(currency.currencySymbol(for: currencyName))
+                    }
                 default: Text("")
                 }
             }
