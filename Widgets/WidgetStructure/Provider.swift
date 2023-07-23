@@ -11,57 +11,69 @@ struct Provider: IntentTimelineProvider {
 
     typealias Intent = CurrencySelectionIntent
 
-    private let service = FetchCurrencyService()
-    private let udService = UserDefaultsService()
+    private let fetchService: FetchCurrencyType
+    private let udService: UserDefaultsType
+
+    init(
+        fetchService: FetchCurrencyType = FetchCurrencyService(),
+        udService: UserDefaultsType = UserDefaultsService()
+    ) {
+        self.fetchService = fetchService
+        self.udService = udService
+    }
 
     func placeholder(in context: Context) -> SimpleEntry {
         SimpleEntry(date: Date(), currency: nil, error: nil, selectedCurrency: nil, volatility: nil)
     }
 
-    func getSnapshot(for configuration: Intent, in context: Context, completion: @escaping (SimpleEntry) -> Void) {
+    func getSnapshot(
+        for configuration: Intent,
+        in context: Context,
+        completion: @escaping (SimpleEntry) -> Void
+    ) {
         Task {
-            let currencyName = getCurrencyName(for: configuration)
-            let currentDate = Date()
-            var entry: SimpleEntry
-
-            do {
-                let currency = try await service.fetchCurrency()
-                let udKey = currency.date + currencyName
-                let currentRate = currency.rates[currencyName] ?? 1
-                print(currency)
-                udService.saveVolatilityData(date: udKey, value: currentRate)
-                let volatility = udService.getViolityData(date: udKey, currentValue: currentRate)
-                entry = SimpleEntry(date: currentDate, currency: currency, error: nil, selectedCurrency: currencyName, volatility: volatility)
-            } catch {
-                entry = SimpleEntry(date: currentDate, currency: nil, error: error.localizedDescription, selectedCurrency: nil, volatility: nil)
-            }
-
-            completion(entry)
+            await getData(for: configuration, completion: completion)
         }
     }
 
-    func getTimeline(for configuration: Intent, in context: Context, completion: @escaping (Timeline<SimpleEntry>) -> Void) {
+    func getTimeline(
+        for configuration: Intent,
+        in context: Context,
+        completion: @escaping (Timeline<SimpleEntry>) -> Void
+    ) {
         Task {
-            let currencyName = getCurrencyName(for: configuration)
-            let currentDate = Date()
-            var entry: SimpleEntry
-
-            do {
-                let currency = try await service.fetchCurrency()
-                let udKey = currency.date + currencyName
-                let currentRate = currency.rates[currencyName] ?? 1
-                print(currency)
-                udService.saveVolatilityData(date: udKey, value: currentRate)
-                let volatility = udService.getViolityData(date: udKey, currentValue: currentRate)
-                entry = SimpleEntry(date: currentDate, currency: currency, error: nil, selectedCurrency: currencyName, volatility: volatility)
-            } catch {
-                entry = SimpleEntry(date: currentDate, currency: nil, error: error.localizedDescription, selectedCurrency: nil, volatility: nil)
+            await getData(for: configuration) { entry in
+                let currentDate = Date()
+                let nextUpdate = Calendar.current.date(byAdding: .minute, value: 1, to: currentDate)!
+                let timeline = Timeline(entries: [entry], policy: .after(nextUpdate))
+                completion(timeline)
             }
-
-            let nextUpdate = Calendar.current.date(byAdding: .minute, value: 1, to: currentDate)!
-            let timeline = Timeline(entries: [entry], policy: .after(nextUpdate))
-            completion(timeline)
         }
+    }
+
+    // MARK: Private
+
+    private func getData(
+        for configuration: Intent,
+        completion: @escaping (SimpleEntry) -> Void
+    ) async {
+        let currencyName = getCurrencyName(for: configuration)
+        let currentDate = Date()
+        var entry: SimpleEntry
+
+        do {
+            let currency = try await fetchService.fetchCurrency()
+            print(currency)
+            let udKey = currency.date + currencyName
+            let currentRate = currency.rates[currencyName] ?? 1
+            udService.saveVolatilityData(date: udKey, value: currentRate)
+            let volatility = udService.getVolatilityData(date: udKey, currentValue: currentRate)
+            entry = SimpleEntry(date: currentDate, currency: currency, error: nil, selectedCurrency: currencyName, volatility: volatility)
+        } catch {
+            entry = SimpleEntry(date: currentDate, currency: nil, error: error.localizedDescription, selectedCurrency: nil, volatility: nil)
+        }
+
+        completion(entry)
     }
 
     private func getCurrencyName(for configuration: Intent) -> String {

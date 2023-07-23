@@ -7,12 +7,16 @@
 
 import Foundation
 
-struct UserDefaultsService {
+protocol UserDefaultsType {
+    func saveVolatilityData(date: String, value: Double)
+    func getVolatilityData(date: String, currentValue: Double) -> Double
+}
 
+struct UserDefaultsService {
     private let defaults = UserDefaults.standard
 }
 
-extension UserDefaultsService {
+extension UserDefaultsService: UserDefaultsType {
 
     func saveVolatilityData(date: String, value: Double) {
         guard let _ = defaults.object(forKey: date) else {
@@ -21,7 +25,7 @@ extension UserDefaultsService {
         }
     }
 
-    func getViolityData(date: String, currentValue: Double) -> Double {
+    func getVolatilityData(date: String, currentValue: Double) -> Double {
         let firstValue = defaults.double(forKey: date)
         let diff = currentValue - firstValue
         let volatility = (diff / firstValue) * 100

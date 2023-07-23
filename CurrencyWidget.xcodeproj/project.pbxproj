@@ -269,7 +269,6 @@
 		9CF363532A6863E1004FC2D5 /* Widgets */ = {
 			isa = PBXGroup;
 			children = (
-				9CE2155C2A6AE1C5007B321C /* CurrencySelection.intentdefinition */,
 				9CF363542A6863E1004FC2D5 /* WidgetsBundle.swift */,
 				9CF363AD2A69CA1A004FC2D5 /* WidgetStructure */,
 				9CF363582A6863E2004FC2D5 /* Assets.xcassets */,
@@ -281,6 +280,7 @@
 		9CF363AD2A69CA1A004FC2D5 /* WidgetStructure */ = {
 			isa = PBXGroup;
 			children = (
+				9CE2155C2A6AE1C5007B321C /* CurrencySelection.intentdefinition */,
 				9CF363562A6863E1004FC2D5 /* StrictlyWidget.swift */,
 				9CF363AE2A69CA40004FC2D5 /* SimpleEntry.swift */,
 				9CF363AB2A69C9DF004FC2D5 /* Provider.swift */,

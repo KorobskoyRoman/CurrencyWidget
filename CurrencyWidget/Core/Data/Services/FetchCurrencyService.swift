@@ -7,6 +7,10 @@
 
 import Foundation
 
+protocol FetchCurrencyType {
+    func fetchCurrency() async throws -> Currency
+}
+
 struct FetchCurrencyService {
 
     private let requestManager: RequestManagerType
@@ -16,7 +20,7 @@ struct FetchCurrencyService {
     }
 }
 
-extension FetchCurrencyService {
+extension FetchCurrencyService: FetchCurrencyType {
 
     func fetchCurrency() async throws -> Currency {
         let requestData = RequestModel.getConvert
